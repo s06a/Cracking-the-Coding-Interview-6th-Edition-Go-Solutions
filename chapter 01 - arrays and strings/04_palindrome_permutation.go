@@ -10,6 +10,8 @@ import (
 // if count is even or there is just one character with
 // odd count, then the string is palindrome
 func isPermutationOfPalindrome(str string) bool {
+	str = strings.ToLower(str)
+
 	// remove spaces
 	var tempString []string
 	for _, char := range strings.Split(str, "") {
